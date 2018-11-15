@@ -1,0 +1,6 @@
+function [ fitness ] = NSGA2_fitness( dna )
+%NSGA2_FITNESS Summary of this function goes here
+dnanum=size(dna,1);
+fitness=zeros(dnanum,3);
+fitness(:,1)=
+%   Detailed explanation goes here

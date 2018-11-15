@@ -1,0 +1,16 @@
+figure(6);
+mesh(DEM.X,DEM.Y,DEM.Z);
+axis([0 100 0 100 hmin hmax*2]);
+colormap summer;
+grid off;
+xlabel('x/km');
+ylabel('x/km');
+zlabel('x/m');
+hold on;
+best=5;
+for i=best:1:best
+   % for i=j::1:dnalength+1      
+   % end
+ %  stem3(resultdna(i,:,1),resultdna(i,:,2),resultdna(i,:,3),'fill');
+   plot3(resultdna(i,:,1),resultdna(i,:,2),resultdna(i,:,3),'r');
+end
